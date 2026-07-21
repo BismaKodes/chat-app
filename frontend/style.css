@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ece5dd;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:30px;
+}
+
+.title{
+    margin-bottom:35px;
+    color:#222;
+}
+
+.phones{
+    display:flex;
+    gap:60px;
+}
+
+/* ==========================
+        PHONE
+========================== */
+
+.phone{
+    width:340px;
+    height:680px;
+    background:#111;
+    border-radius:35px;
+    padding:15px;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.notch{
+    width:120px;
+    height:22px;
+    background:#000;
+    border-radius:20px;
+    position:absolute;
+    left:50%;
+    top:10px;
+    transform:translateX(-50%);
+}
+
+.authScreen,
+.chatScreen{
+    width:100%;
+    height:100%;
+    background:white;
+    border-radius:25px;
+    padding:20px;
+    overflow:hidden;
+}
+
+/* ==========================
+        AUTH
+========================== */
+
+.authScreen{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.authScreen h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.authScreen input{
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.authScreen input:focus{
+    outline:none;
+    border-color:#25D366;
+}
+
+.authScreen button{
+    padding:12px;
+    border:none;
+    background:#25D366;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.authScreen button:hover{
+    background:#20ba5a;
+}
+
+.authScreen p{
+    text-align:center;
+    margin-top:18px;
+}
+
+.authScreen a{
+    color:#25D366;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* ==========================
+        CHAT HEADER
+========================== */
+
+.chatHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+    padding-bottom:12px;
+}
+
+.chatHeader h3{
+    margin-bottom:3px;
+}
+
+.status{
+    color:gray;
+    font-size:13px;
+}
+
+.logoutBtn{
+    border:none;
+    background:#ff4d4d;
+    color:white;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* ==========================
+        CHAT AREA
+========================== */
+
+.messages{
+    height:450px;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    padding:15px 5px;
+}
+
+/* ==========================
+        MESSAGE BUBBLES
+========================== */
+
+.message{
+    max-width:75%;
+    padding:10px 14px;
+    margin:6px 0;
+    border-radius:15px;
+    word-wrap:break-word;
+    font-size:15px;
+}
+
+.mine{
+    align-self:flex-end;
+    background:#DCF8C6;
+}
+
+.other{
+    align-self:flex-start;
+    background:#eeeeee;
+}
+
+/* ==========================
+        TYPING
+========================== */
+
+.typing{
+    height:20px;
+    color:#777;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+/* ==========================
+        INPUT AREA
+========================== */
+
+.messageInput{
+    display:flex;
+    gap:10px;
+}
+
+.messageInput input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:20px;
+    outline:none;
+}
+
+.messageInput button{
+    border:none;
+    background:#25D366;
+    color:white;
+    border-radius:20px;
+    padding:0 18px;
+    cursor:pointer;
+}
+
+/* ==========================
+        HIDDEN
+========================== */
+
+.hidden{
+    display:none;
+}
